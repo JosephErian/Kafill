@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>KAF</title>
+        <link rel="icon" href="images/favicon.svg" sizes="16px" type="image/x-icon"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body class="">
+        <nav class="center nav-bg">
+            <div class="logo">
+                <img src="./images/favicon.svg" style="width: 90px; height: auto;" alt="logo"/>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li>
+                        <div class="nav-item active-btn" data-id="auctions">
+                                <img src='./images/navIcons/cart.svg' />
+                                <p>Auctions</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" data-id="contests">
+                                <img src='./images/navIcons/trophy.svg' />
+                                <p>Contests</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" data-id="projects">
+                                <img src='./images/navIcons/case.svg' />
+                                <p>Projects</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" data-id="portfolios">
+                                <img src='./images/navIcons/window.svg' />
+                                <p>Portfolios</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item" data-id="freelancers">
+                                <img src='./images/navIcons/freelancers.svg' />
+                                <p>Freelancers</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="nav-item" data-id="forums">
+                                <img src='./images/navIcons/forum.svg' />
+                                <p>Forum</p>
+                        </div>
+                    </li>
+            </ul>
+            </div>
+            <div class="nav-notifications-items">
+                <ul>
+                    <li>
+                        <div id="message" class="nav-notifications-item">
+                            <span>
+                                <img src="./images/notificationsIcons/message.svg" alt="Notifications"/>
+                            </span><span class="badge">10</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="alarm" class="nav-notifications-item">
+                            <span>
+                                <img src="./images/notificationsIcons/bell.svg" alt="Messaging"/>
+                            </span><span class="badge">10</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-notifications-item" id="user">
+                            <img src="./images/notificationsIcons/user.jpeg" style="border: 3px solid aqua; border-radius: 50%; width: 33px; height: 33px; object-fit: cover;">
+                        </div>
+                    </li>
+                </ul>
+            </div>      
+        </nav>
+        <div id="messagelist" class="alarmlist hidden">
+            <div class="nav-alarm-items" >
+                <div style="display: flex; flex-direction: column;padding-top: 10px;">
+                    <div style="display: flex; flex-direction: row;">
+                        <img src="./images/notificationsIcons/user.jpeg" style="border-radius: 50%; width: 33px; height: 33px; object-fit: cover;">
+                        <h2>Lorem ipsum</h2>                            
+                    </div>
+                    <p> vero eligendi tenetur assumenda iure omnis ratione, ex explicabo deleniti accusantium temporibus ipsa debitis! Quibusdam, maxime? Nisi.</p>  
+                </div>
+                <div style="display: flex; flex-direction: column;padding-top: 10px;">
+                    <div style="display: flex; flex-direction: row;">
+                        <img src="./images/notificationsIcons/user.jpeg" style="border-radius: 50%; width: 33px; height: 33px; object-fit: cover;">
+                        <h2>Lorem ipsum</h2>                            
+                    </div>
+                    <p> vero eligendi tenetur assumenda iure omnis ratione, ex explicabo deleniti accusantium temporibus ipsa debitis! Quibusdam, maxime? Nisi.</p>  
+                </div>
+                <div style="display: flex; flex-direction: column;padding-top: 10px;">
+                    <div style="display: flex; flex-direction: row;">
+                        <img src="./images/notificationsIcons/user.jpeg" style="border-radius: 50%; width: 33px; height: 33px; object-fit: cover;">
+                        <h2>Lorem ipsum</h2>                            
+                    </div>
+                    <p> vero eligendi tenetur assumenda iure omnis ratione, ex explicabo deleniti accusantium temporibus ipsa debitis! Quibusdam, maxime? Nisi.</p>  
+                </div>
+            </div>
+        </div>
+        <div id="alarmlist" class="alarmlist hidden">
+            <div class="nav-alarm-items" >
+                <div style="display: flex; flex-direction: column;padding-top: 10px;">
+                    <div style="display: flex; flex-direction: row;">
+                        <img src="./images/notificationsIcons/user.jpeg" style="border-radius: 50%; width: 33px; height: 33px; object-fit: cover;">
+                        <h2>Lorem ipsum</h2>                            
+                    </div>
+                    <p> vero eligendi tenetur assumenda iure omnis ratione, ex explicabo deleniti accusantium temporibus ipsa debitis! Quibusdam, maxime? Nisi.</p>  
+                </div>
+                <div style="display: flex; flex-direction: column;padding-top: 10px;">
+                    <div style="display: flex; flex-direction: row;">
+                        <img src="./images/notificationsIcons/user.jpeg" style="border-radius: 50%; width: 33px; height: 33px; object-fit: cover;">
+                        <h2>Lorem ipsum</h2>                            
+                    </div>
+                    <p> vero eligendi tenetur assumenda iure omnis ratione, ex explicabo deleniti accusantium temporibus ipsa debitis! Quibusdam, maxime? Nisi.</p>  
+                </div>
+                <div style="display: flex; flex-direction: column;padding-top: 10px;">
+                    <div style="display: flex; flex-direction: row;">
+                        <img src="./images/notificationsIcons/user.jpeg" style="border-radius: 50%; width: 33px; height: 33px; object-fit: cover;">
+                        <h2>Lorem ipsum</h2>                            
+                    </div>
+                    <p> vero eligendi tenetur assumenda iure omnis ratione, ex explicabo deleniti accusantium temporibus ipsa debitis! Quibusdam, maxime? Nisi.</p>  
+                </div>
+            </div>
+        </div>
+        <div id="sidelist" class="sidelist hidden">
+            <div  class="nav-sidelist-items ">
+                <div class="nav-sidelist-item">
+                    <img src="./images/notificationsIcons/user.jpeg" style="border-radius: 50%; width: 33px; height: 33px; object-fit: cover;">
+                    <div class="user-info">
+                        <h2>Ahmed Ali</h2>
+                        <p>Student</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="nav-sidelist-item">
+                            <img src="./images/sideicons/account.svg" />
+                            <div class="tiles">
+                                <p>My Profile</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-sidelist-item">
+                            <img src="./images/sideicons/moon.svg" />
+                            <div class="tiles">
+                                <p>Dark Mode</p>                        
+                                <input type="checkbox" id="mode">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-sidelist-item">
+                            <img src="./images/sideicons/translate.svg" />
+                            <div class="tiles">
+                                <p>Language</p>                        
+                                <div>
+                                    toggle
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-sidelist-item">
+                            <img src="./images/sideicons/gear.svg" />
+                            <div class="tiles">
+                                <p>Account Settings</p>    
+                            </div>           
+                        </div>
+                    </li>              
+                </ul>
+                <div class="nav-sidelist-item">
+                    <img src="./images/sideicons/logout.svg" />
+                    <div class="tiles">
+                        <p style="color: var(--error-300, #F56342);">Logout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padding-x">
+            <div class="container">
+                <div class="left-container">
+                    <div class="headline">
+                        <p>Design / Logo Design</p>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, </h2>
+                        <div class="headline-rate">
+                            <div class="headline-rate-left">
+                                <img src="./images/conatiner/stars.svg"/>
+                                <p>4.1 | (500)</p>
+                            </div>
+                            <div class="headline-rate-right">
+                                <img src="./images/conatiner/share.svg">
+                                <img src="./images/conatiner/heart.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <section class="conatiner-carousel">
+                        <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+                        <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+                    </section>
+                    <h2>Description</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, quam quod. Dolorum labore est id blanditiis laborum reiciendis culpa alias veritatis? Temporibus laborum ipsam iste facilis quibusdam! Ducimus, nesciunt corporis.</p>
+                    <h2>Service Add-Ons</h2>
+                    <div>
+                        <div>
+                            <div>
+                                <img src="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, quia quas hic et cupiditate, animi non labore magni nostrum quaerat reprehenderit omnis, tempore eos quisquam inventore aliquam excepturi! Recusandae, quas?</p>
+                            </div>
+                            <div>$100 + 2 days</div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, quia quas hic et cupiditate, animi non labore magni nostrum quaerat reprehenderit omnis, tempore eos quisquam inventore aliquam excepturi! Recusandae, quas?</p>
+                            </div>
+                            <div>$100 + 2 days</div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, quia quas hic et cupiditate, animi non labore magni nostrum quaerat reprehenderit omnis, tempore eos quisquam inventore aliquam excepturi! Recusandae, quas?</p>
+                            </div>
+                            <div>$100 + 2 days</div>
+                        </div>
+                        <h2>Purchase Service</h2>
+                        <div>Counter + Price + Button</div>
+                        <div><img src=""><h2>4.6 Service Rating. 46 Ratings</h2></div>
+                        <div>
+                            <div>Work Quality + rate + stars + bar</div>
+                            <div>Communication & Collabration + rate + stars + bar</div>
+                            <div>Adherence to Schedule + rate + stars + bar</div>
+                        </div>
+                        <div>
+                            <div>
+                                <img>
+                                <div>
+                                    <h3>Jane Smith</h3>
+                                    <div>rate</div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, debitis recusandae, quam adipisci minima nulla, cum aspernatur eaque odit hic aperiam molestias. Exercitationem praesentium autem provident voluptates reiciendis culpa minima.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img>
+                                <div>
+                                    <h3>Jane Smith</h3>
+                                    <div>rate</div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, debitis recusandae, quam adipisci minima nulla, cum aspernatur eaque odit hic aperiam molestias. Exercitationem praesentium autem provident voluptates reiciendis culpa minima.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img>
+                                <div>
+                                    <h3>Jane Smith</h3>
+                                    <div>rate</div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, debitis recusandae, quam adipisci minima nulla, cum aspernatur eaque odit hic aperiam molestias. Exercitationem praesentium autem provident voluptates reiciendis culpa minima.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="">
+                                <input/>
+                            </div>
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+            <div class="right-container">
+                <div>
+                    <h2>Seller</h2>
+                    <img src="">
+                    <h2>icons</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sit porro nam hic quam nulla</p>
+                    <button>Contact Me</button>
+                </div>
+                <div>
+                    <h2>Info</h2>
+                    <div>
+                        <div>
+                            <img src="">
+                            <p>Price</p>
+                        </div>
+                        <p>$10</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="">
+                            <p>Delivery Duration</p>
+                        </div>
+                        <p>1 day</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="">
+                            <p>In Progress Orders</p>
+                        </div>
+                        <p>2</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="">
+                            <p>Customers</p>
+                        </div>
+                        <p>2</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="">
+                            <p>Sales</p>
+                        </div>
+                        <p>$25</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="">
+                            <p>Category</p>
+                        </div>
+                        <p>Design</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="">
+                            <p>SubCategory</p>
+                        </div>
+                        <p>Logo Design</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Share & Earn</h2>
+                    <div>
+                        <img src="" alt="linkedin"/>
+                        <img src="" alt="linkedin"/>
+                        <img src="" alt="linkedin"/>
+                        <img src="" alt="linkedin"/>
+                        <img src="" alt="linkedin"/>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>Seller Other Services</h2>
+                        <p>see more</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <h2>Suggested Services</h2>
+            <div>
+                <div>
+                    <span></span>
+                    <img src="">
+                    <p></p>
+                    <div>rate</div>
+                    <div><img src=""></div>
+                </div>
+                <div>
+                    <span></span>
+                    <img src="">
+                    <p></p>
+                    <div>rate</div>
+                    <div><img src=""></div>
+                </div>
+                <div>
+                    <span></span>
+                    <img src="">
+                    <p></p>
+                    <div>rate</div>
+                    <div><img src=""></div>
+                </div>
+                <div>
+                    <span></span>
+                    <img src="">
+                    <p></p>
+                    <div>rate</div>
+                    <div><img src=""></div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
