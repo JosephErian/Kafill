@@ -216,19 +216,13 @@ nav ul{
 .left-container{
     display: flex;
     flex-direction: column;
-    flex: 9;
+    flex: 8;
     align-items: flex-start;
     justify-content: space-around;
-    padding: 0 5% 0 0;
     gap: 14px;
+    overflow: hidden;
 }
-.right-container{
-    display: flex;
-    flex: 3;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-}
+
 
 .headline{
     display: flex;
@@ -277,6 +271,79 @@ nav ul{
     justify-content: flex-end;
     gap: 10px;
 }
-.container-carousel{
-    width: 80%;
+
+.slider-wrapper {
+    background-color: #191919;
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    transform: translateY(0px);
+    height: 4rem;
+    background-color: white;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    
+}
+
+#slide-arrow-prev {
+    left: 0px;
+}
+
+#slide-arrow-next {
+    right: 0;
+}
+
+.slides-container {
+    height: calc(100vh - 2rem);
+    width: 100%;
+    display: flexbox;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+  .slide:nth-child(1) {
+    background-image: url(./images/conatiner/Rectangle.png);
+}
+  
+  .slide:nth-child(2) {
+    background-image: url(./images/conatiner/Rectangle.png);
+    margin: 0;
+
+  }
+  
+  .slide:nth-child(3) {
+    background-image: url(./images/conatiner/Rectangle.png);
+    margin: 0;
+  }
+  
+  .slide:nth-child(4) {
+    background-image: url(./images/conatiner/Rectangle.png);
+    margin: 0;
+  }
+
+  .right-container{
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 10px;
 }

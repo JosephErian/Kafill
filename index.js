@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function(){
   
     document.getElementById('user').addEventListener("click", toggleSideList);
@@ -8,6 +9,15 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('messagelist').addEventListener("click", togglemessageList);
     document.getElementById('mode').addEventListener('change',toggleColorMode)
     toggleNavbar();
+    document.getElementById("slide-arrow-next").addEventListener("click", () => {
+        const slideWidth = document.querySelector(".slide").clientWidth;
+        slidesContainer.scrollLeft += slideWidth;
+      });
+      
+      document.getElementById("slide-arrow-prev").addEventListener("click", () => {
+        const slideWidth = slide.clientWidth;
+        document.getElementById("slides-container").scrollLeft -= slideWidth;
+      });
     }
     );
 
@@ -36,6 +46,8 @@ function togglealarmList() {
 function togglemessageList() {
     document.getElementById('messagelist').classList.toggle('hidden');
 } 
+
+
 
 
 
