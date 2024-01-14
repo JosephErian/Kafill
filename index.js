@@ -46,11 +46,3 @@ function togglealarmList() {
 function togglemessageList() {
     document.getElementById('messagelist').classList.toggle('hidden');
 } 
-
-
-
-
-
-
-
-

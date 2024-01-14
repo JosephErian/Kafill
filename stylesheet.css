@@ -389,3 +389,45 @@ nav ul{
     flex-direction: column;
     gap: 20px;
 }
+.purchase{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Montserrat;
+
+}
+.purchase-operation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+.purchase-counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    border: none;
+    gap: 64px;
+    flex: 4;
+    border-radius: 4px;
+
+}
+.purchase-counter button{
+    border: 0;
+    background-color: white;
+    border-radius: 50%;
+}
+.purchase-btn{
+    width: 150px;
+    height: 40px;
+    background-color: #1DBF73;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+}
