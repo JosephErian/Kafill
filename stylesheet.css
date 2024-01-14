@@ -338,15 +338,6 @@ nav ul{
     margin: 0;
   }
 
-  .right-container{
-    display: flex;
-    flex: 4;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 0 0 10px;
-}
-
 .description{
     color: var(--base-black, #000);
 
@@ -430,4 +421,127 @@ nav ul{
     border: 0;
     border-radius: 4px;
     font-size: 16px;
+}
+.rating-rect{
+    width: 200px;
+    height: 8px;
+    background-color: #C3C5C8;
+    flex-grow: 1;
+}
+.rating-rect-green{
+    position: relative;
+    width: 140px;
+    height: 8px;
+    background-color: #f7d600;
+}
+.rate{
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+.rates{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 30px;
+    gap: 20px;
+}
+.rate-name{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-grow: auto;
+}
+.service-rating{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rate-stars{
+    display: flex;
+    flex-grow: 1;
+}
+.testmonials{
+    display: flex;
+    flex-direction: column;
+}
+.testmonial{
+    background-color: #E9F9F1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: small;
+}
+.testmonial-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.testmonial-poster-info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.post{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.user-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.post-text{
+    background-color: #C3C5C8;
+    color: #000;
+    padding: 10px;
+    width: 550px;
+    min-height: 100px;
+}
+
+.right-container{
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 0 0 10%;
+}
+.seller{
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+.seller-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seller-title{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+.info-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 33px;
+    gap: 5px;
+    flex: 1;
+}
+.info-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
