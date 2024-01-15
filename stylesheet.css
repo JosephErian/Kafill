@@ -272,9 +272,9 @@ nav ul{
 }
 
 .carousel {
+    width: 100vh;
     height: 100vh;
     position: relative;
-    width: 90vh;
   }
   
   .carousel > ul {
