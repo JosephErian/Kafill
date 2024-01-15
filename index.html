@@ -20,7 +20,7 @@
                 <ul class="nav-items">
                     <li>
                         <div class="nav-item active-btn" data-id="auctions">
-                                <img src='./images/navIcons/cart.svg' />
+                                <img src='./images/navIcons/cart.svg' class="nav-icon" />
                                 <p>Auctions</p>
                         </div>
                     </li>
@@ -347,7 +347,10 @@
                 <div class="seller">
                     <h2>Seller</h2>
                     <div class="seller-info">
-                        <img src="./images/conatiner/PosterAvatar.svg"><div class="green-dot"></div></img>
+                        <div class="poster-logo-with-green-dot">
+                            <div class="green-dot"></div>
+                            <img src="./images/conatiner/PosterAvatar.svg">
+                        </div>
                         <div class="seller-title">
                             <h2>Jane Smith</h2>
                             <img src="./images/conatiner/right-check.svg"/>
@@ -360,11 +363,13 @@
                             <img src="./images/conatiner/stars.svg"/>
                             <p>4.1 (500)</p>
                         </div>
-                        <div class="seller-title">
-                            <img src="./images/conatiner/medal.svg"/><img src="./images/conatiner/signin.svg"/><img src="./images/conatiner/idcard.svg"/>
+                        <div class="seller-tools">
+                            <img src="./images/conatiner/medal.svg"/>
+                            <img src="./images/conatiner/signin.svg"/>
+                            <img src="./images/conatiner/idcard.svg"/>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sit porro nam hic quam nulla</p>
-                        <button class="purchase-btn">Contact Me</button>
+                        <button class="seller-btn">Contact Me</button>
                     </div>
                 </div>
                 <div class="info">
@@ -419,59 +424,202 @@
                         <p>Logo Design</p>
                     </div>
                 </div>
-                <div>
+                <div class="share">
                     <h2>Share & Earn</h2>
-                    <div>
-                        <img src="" alt="linkedin"/>
-                        <img src="" alt="linkedin"/>
-                        <img src="" alt="linkedin"/>
-                        <img src="" alt="linkedin"/>
-                        <img src="" alt="linkedin"/>
+                    <div class="share-icons">
+                        <img src="./images/conatiner/social/linkedin.svg" alt="linkedin"/>
+                        <img src="./images/conatiner/social/facebook.svg" alt="facebook"/>
+                        <img src="./images/conatiner/social/whatsapp.svg" alt="whatsapp"/>
+                        <img src="./images/conatiner/social/twitter.svg" alt="twitter"/>
+                        <img src="./images/conatiner/social/copy.svg" alt="clipboard"/>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="info">
+                    <div class="info-icons">
                         <h2>Seller Other Services</h2>
-                        <p>see more</p>
+                        <p style="font-size: 12px"><a href="#">see more</a></p>
                     </div>
-                    <div>
-                        <div>
-                            <img src="" alt=""/>
+                    <div class="other-services">
+                        <div class="other-services-card">
+                            <img class="other-service-img" src="./images/conatiner/Rectangle.png" alt="service"/>
+                            <div class ="other-services-info">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <div class="other-services-info-rate">
+                                    <div class="other-service-info-rate-price">
+                                        <img src="./images/conatiner/star.svg"/><span>4.9 (50)</span>
+                                        <img src="./images/conatiner/sale.svg"/><span>$10</span>
+                                    </div>
+                                    <img src="./images/conatiner/heart.svg"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-services-card">
+                            <img class="other-service-img" src="./images/conatiner/Rectangle.png" alt="service"/>
+                            <div class ="other-services-info">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <div class="other-services-info-rate">
+                                    <div class="other-service-info-rate-price">
+                                        <img src="./images/conatiner/star.svg"/><span>4.9 (50)</span>
+                                        <img src="./images/conatiner/sale.svg"/><span>$10</span>
+                                    </div>
+                                    <img src="./images/conatiner/heart.svg"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-services-card">
+                            <img class="other-service-img" src="./images/conatiner/Rectangle.png" alt="service"/>
+                            <div class ="other-services-info">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <div class="other-services-info-rate">
+                                    <div class="other-service-info-rate-price">
+                                        <img src="./images/conatiner/star.svg"/><span>4.9 (50)</span>
+                                        <img src="./images/conatiner/sale.svg"/><span>$10</span>
+                                    </div>
+                                    <img src="./images/conatiner/heart.svg"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-services-card">
+                            <img class="other-service-img" src="./images/conatiner/Rectangle.png" alt="service"/>
+                            <div class ="other-services-info">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                                <div class="other-services-info-rate">
+                                    <div class="other-service-info-rate-price">
+                                        <img src="./images/conatiner/star.svg"/><span>4.9 (50)</span>
+                                        <img src="./images/conatiner/sale.svg"/><span>$10</span>
+                                    </div>
+                                    <img src="./images/conatiner/heart.svg"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+            <div>
             <h2>Suggested Services</h2>
             <div class="suggested-services">
-                <div>
-                    <span></span>
-                    <img src="">
-                    <p></p>
-                    <div>rate</div>
-                    <div><img src=""></div>
+                <div class="suggested-services-card">
+                    <div class="suggested-services-img">
+                        <div class="suggested-services-heart-container">                        
+                        <div class="suggested-services-circle"></div>
+                        <div class="suggested-services-heart">
+                            <img src="./images/conatiner/heart.svg"/>
+                        </div>
+                    </div>
+                        <img src="./images/conatiner/Rectangle.png" alt="service">
+                    </div>
+                    <div class ="suggested-services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <div class="suggested-services-info-rate">
+                            <div class="suggested-services-info-rate-price">
+                                <div style="display: flex; align-items: center; flex-direction: row;"><img src="./images/conatiner/star.svg"/><p> 4.9 (50)</p></div>
+                                <div style="display: flex; align-items: center; flex-direction: row;"><img src="./images/conatiner/shoppingcart.svg"/><p> $10</p></div>
+                            </div>
+                        </div>
+                        <div class="suggested-services-user">
+                            <div class="suggested-services-user-info">
+                                <img src="./images/conatiner/PosterAvatar.svg">
+                                <p>Jane Smith</p>
+                            </div>
+                            <div>
+                                <img src="./images/conatiner/sale.svg">
+                                <span>$10</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <span></span>
-                    <img src="">
-                    <p></p>
-                    <div>rate</div>
-                    <div><img src=""></div>
+                <div class="suggested-services-card">
+                    <div class="suggested-services-img">
+                        <div class="suggested-services-heart-container">                        
+                        <div class="suggested-services-circle"></div>
+                        <div class="suggested-services-heart">
+                            <img src="./images/conatiner/heart.svg"/>
+                        </div>
+                    </div>
+                        <img src="./images/conatiner/Rectangle.png" alt="service">
+                    </div>
+                    <div class ="suggested-services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <div class="suggested-services-info-rate">
+                            <div class="suggested-services-info-rate-price">
+                                <div style="display: flex; align-items: center; flex-direction: row;"><img src="./images/conatiner/star.svg"/><p> 4.9 (50)</p></div>
+                                <div style="display: flex; align-items: center; flex-direction: row;"><img src="./images/conatiner/shoppingcart.svg"/><p> $10</p></div>
+                            </div>
+                        </div>
+                        <div class="suggested-services-user">
+                            <div class="suggested-services-user-info">
+                                <img src="./images/conatiner/PosterAvatar.svg">
+                                <p>Jane Smith</p>
+                            </div>
+                            <div>
+                                <img src="./images/conatiner/sale.svg">
+                                <span>$10</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <span></span>
-                    <img src="">
-                    <p></p>
-                    <div>rate</div>
-                    <div><img src=""></div>
+                <div class="suggested-services-card">
+                    <div class="suggested-services-img">
+                        <div class="suggested-services-heart-container">                        
+                        <div class="suggested-services-circle"></div>
+                        <div class="suggested-services-heart">
+                            <img src="./images/conatiner/heart.svg"/>
+                        </div>
+                    </div>
+                        <img src="./images/conatiner/Rectangle.png" alt="service">
+                    </div>
+                    <div class ="suggested-services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <div class="suggested-services-info-rate">
+                            <div class="suggested-services-info-rate-price">
+                                <div style="display: flex; align-items: center; flex-direction: row;"><img src="./images/conatiner/star.svg"/><p> 4.9 (50)</p></div>
+                                <div style="display: flex; align-items: center; flex-direction: row;"><img src="./images/conatiner/shoppingcart.svg"/><p> $10</p></div>
+                            </div>
+                        </div>
+                        <div class="suggested-services-user">
+                            <div class="suggested-services-user-info">
+                                <img src="./images/conatiner/PosterAvatar.svg">
+                                <p>Jane Smith</p>
+                            </div>
+                            <div>
+                                <img src="./images/conatiner/sale.svg">
+                                <span>$10</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <span></span>
-                    <img src="">
-                    <p></p>
-                    <div>rate</div>
-                    <div><img src=""></div>
+                <div class="suggested-services-card">
+                    <div class="suggested-services-img">
+                        <div class="suggested-services-heart-container">                        
+                        <div class="suggested-services-circle"></div>
+                        <div class="suggested-services-heart">
+                            <img src="./images/conatiner/heart.svg"/>
+                        </div>
+                    </div>
+                        <img src="./images/conatiner/Rectangle.png" alt="service">
+                    </div>
+                    <div class ="suggested-services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <div class="suggested-services-info-rate">
+                            <div class="suggested-services-info-rate-price">
+                                <div style="display: flex; align-items: center; flex-direction: row;"><img src="./images/conatiner/star.svg"/><p> 4.9 (50)</p></div>
+                                <div style="display: flex; align-items: center; flex-direction: row;"><img src="./images/conatiner/shoppingcart.svg"/><p> $10</p></div>
+                            </div>
+                        </div>
+                        <div class="suggested-services-user">
+                            <div class="suggested-services-user-info">
+                                <img src="./images/conatiner/PosterAvatar.svg">
+                                <p>Jane Smith</p>
+                            </div>
+                            <div>
+                                <img src="./images/conatiner/sale.svg">
+                                <span>$10</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </div>
         <script src="index.js"></script>

@@ -507,24 +507,67 @@ nav ul{
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    padding: 0 0 0 10%;
+    margin-left: 30px;
 }
 .seller{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
 }
 .seller-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+.poster-logo-with-green-dot{
+    position: relative;
+}
+.poster-logo-with-green-dot img{
+    width: 50px;
+
+}
+.green-dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 5px;
+    right: 5px;
+    background-color: #1DBF73;
+    border-radius: 50px;
+    z-index: 1;
 }
 .seller-title{
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
+}
+.seller-tools{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+.seller-tools img{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: aliceblue;
+}
+.seller-btn{
+    width: 100%;
+    height: 50px;
+    border: 0;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #1DBF73;
+    color: #FFF;
 }
 .info{
     display: flex;
@@ -536,6 +579,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     align-items: center;
+
     width: 33px;
     gap: 5px;
     flex: 1;
@@ -543,5 +587,128 @@ nav ul{
 .info-icons{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.share-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 30px;
+}
+.share{
+    margin: 30px 0;
+}
+.other-services{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.other-services-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.other-service-img{
+    width: 50%;
+    border-radius: 32px 0px 0 32px;
+}
+.other-services-info{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.other-services-info-rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.other-services-info-rate img{
+    width: 25px;
+}
+.other-service-info-rate-price img{
+    width: 20px;
+    height: 20px;
+}
+.other-service-info-rate-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.suggested-services{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 40px 0 ;
+}
+.suggested-services-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 5px 0;
+}
+
+.suggested-services-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px 50px 0 0;
+}
+
+.suggested-services-img {
+    position: relative;
+}
+
+.suggested-services-heart-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.suggested-services-heart {
+    width: 30px;
+    position: absolute;
+    top: 7.5px;
+    left: 7.5px;
+}
+
+.suggested-services-circle {
+    width: 45px; /* Same dimensions as the heart */
+    height: 45px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0; /* Behind the heart */
+}
+.suggested-services-info{
+    display: flex;
+    padding: 0 10%;
+    flex-direction: column;
+    gap: 20px;
+}
+.suggested-services-info-rate-price{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.suggested-services-info-rate-price img{
+    width: 25px;
+}
+.suggested-services-user{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.suggested-services-user-info{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
     align-items: center;
 }
