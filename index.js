@@ -1,6 +1,47 @@
+const NavbarIcons = [
+    {
+    id:"auctions",
+    inactiveLogo: './images/navIcons/cart.svg',
+    activeLogo: './images/navIcons/cartOn.svg',
+    selected: true,
+},
+{
+    id:"contests",
+    inactiveLogo: './images/navIcons/trophy.svg',
+    activeLogo: './images/navIcons/trophyOn.svg',
+    selected: false,
+},
+{
+    id:"projects",
+    inactiveLogo: './images/navIcons/case.svg',
+    activeLogo: './images/navIcons/caseOn.svg',
+    selected: false,
+},
+{
+    id:"portfolios",
+    inactiveLogo: './images/navIcons/window.svg',
+    activeLogo: './images/navIcons/windowOn.svg',
+    selected: false,
+},
+{
+    id:"freelancers",
+    inactiveLogo: './images/navIcons/freelancers.svg',
+    activeLogo: './images/navIcons/freelancersOn.svg',
+    selected: false,
+},
+{
+    id:"forum",
+    inactiveLogo: './images/navIcons/forum.svg',
+    activeLogo: './images/navIcons/forumOn.svg',
+    selected: false,
+},
+]
+
+
+
 
 document.addEventListener('DOMContentLoaded', function(){
-  
+   
     document.getElementById('user').addEventListener("click", toggleSideList);
     document.getElementById('sidelist').addEventListener("click", toggleSideList);
     document.getElementById('alarm').addEventListener("click", togglealarmList);
@@ -10,29 +51,41 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('mode').addEventListener('change',toggleColorMode)
     toggleNavbar();
     handleCarousel();
-    document.getElementById("slide-arrow-next").addEventListener("click", () => {
-        const slideWidth = document.querySelector(".slide").clientWidth;
-        slidesContainer.scrollLeft += slideWidth;
-      });
-      
-      document.getElementById("slide-arrow-prev").addEventListener("click", () => {
-        const slideWidth = slide.clientWidth;
-        document.getElementById("slides-container").scrollLeft -= slideWidth;
-      });
-    }
-    );
-
-function toggleNavbar() {
-    [...document.querySelectorAll(".nav-item")].forEach(button => {
-        button.addEventListener("click", function() {
-            document.querySelector(".active-btn").classList.remove("active-btn");
-            this.classList.add("active-btn");
-            document.querySelector(".active").classList.remove("active");
-            document.getElementById(button.dataset.id).classList.add("active");
-        })
     });
-};
 
+    function toggleNavbar() {
+        let navButtons = document.querySelectorAll('.nav-item');
+    
+        for (let i = 0; i < navButtons.length; i++) {
+            navButtons[i].addEventListener('click', function() {
+                const dataId = this.dataset.id;
+    
+                NavbarIcons.forEach(icon => {
+                    let img = this.querySelector('img');
+                    if (icon.id === dataId) {
+                        img.src = icon.selected ? icon.inactiveLogo : icon.activeLogo;
+                        icon.selected = !icon.selected;
+                    } else {
+                        img.src = icon.inactiveLogo;
+                        icon.selected = false;
+                    }
+                });
+    
+                document.querySelector(".active-btn").classList.remove("active-btn");
+                this.classList.add("active-btn");
+    
+                const activeContent = document.querySelector(".active");
+                if (activeContent) {
+                    activeContent.classList.remove("active");
+                }
+    
+                const contentToActivate = document.getElementById(dataId);
+                if (contentToActivate) {
+                    contentToActivate.classList.add("active");
+                }
+            }.bind(navButtons[i]));  // Using bind to create a closure
+        }
+    }
 function toggleColorMode(){
     let body = document.body
     body.classList.toggle("dark-mode", toggleColorMode.checked)

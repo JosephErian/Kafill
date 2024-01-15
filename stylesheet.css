@@ -180,7 +180,7 @@ nav ul{
     gap: 20px; 
 }
 .dark-mode{
-    background-color: black;
+    background-color: rgb(239, 0, 0);
 }
 
 .icon-active img {
