@@ -21,30 +21,16 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     );
 
-    function toggleNavbar() {
-        const navItems = document.querySelectorAll(".nav-item");
-    
-        navItems.forEach(button => {
-            button.addEventListener("click", function() {
-                // Remove active-btn from the previously active button
-                document.querySelector(".active-btn").classList.remove("active-btn");
-    
-                // Add active-btn to the clicked button
-                this.classList.add("active-btn");
-    
-                // Remove active from the previously active content
-                document.querySelector(".active").classList.remove("active");
-    
-                // Add active to the content associated with the clicked button
-                document.getElementById(button.dataset.id).classList.add("active");
-    
-                // Toggle the image based on whether the clicked button has the active-btn class
-                const isActive = this.classList.contains("active-btn");
-                const imgSrc = isActive ? './images/navIcons/cart.svg' : './images/navIcons/inactive-cart.svg';
-                this.querySelector(".nav-icon").src = imgSrc;
-            });
-        });
-    }    
+function toggleNavbar() {
+    [...document.querySelectorAll(".nav-item")].forEach(button => {
+        button.addEventListener("click", function() {
+            document.querySelector(".active-btn").classList.remove("active-btn");
+            this.classList.add("active-btn");
+            document.querySelector(".active").classList.remove("active");
+            document.getElementById(button.dataset.id).classList.add("active");
+        })
+    });
+};
 
 function toggleColorMode(){
     let body = document.body
